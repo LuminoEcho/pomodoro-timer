@@ -34,4 +34,5 @@ A simple Pomodoro timer to help you stay focused and productive.
 ![Main Timer View](preview/main_preview.jpg)
 
 *Settings panel*
+
 ![Settings Panel View](preview/settings_preview.jpg)
