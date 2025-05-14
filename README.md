@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-A simple Pomodoro timer to help you stay focused and productive.
+A simple Pomodoro timer.
 
 ## Features
 
