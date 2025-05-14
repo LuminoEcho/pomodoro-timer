@@ -30,9 +30,8 @@ A simple Pomodoro timer to help you stay focused and productive.
 
 ## Preview
 
-![Main Timer View](preview/main_preview.jpg)
 *Main timer interface*
+![Main Timer View](preview/main_preview.jpg)
 
-![Settings Panel View](preview/settings_preview.jpg)
 *Settings panel*
-
+![Settings Panel View](preview/settings_preview.jpg)
