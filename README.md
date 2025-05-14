@@ -28,17 +28,11 @@ A simple Pomodoro timer to help you stay focused and productive.
 *   CSS
 *   JavaScript
 
-## How to Use
-
-1.  Open `index.html` in your web browser.
-2.  Select a timer mode: Pomodoro, Short Break, or Long Break.
-3.  Click the "Start" button or press the `Spacebar` to begin the timer.
-4.  To customize timer durations or behavior:
-    *   Click the settings icon (⚙️) in the top right corner.
-    *   Adjust the time sliders for Pomodoro, Short Break, and Long Break.
-    *   Toggle switches for "Auto-start breaks", "Auto-start Pomodoros", and "Sound notifications".
-    *   Click "Save Settings".
-5.  Use the volume icon (🔊/🔇) to toggle sound notifications on or off directly from the main screen.
-
 ## Preview
+
+![Main Timer View](preview/main_preview.jpg)
+*Main timer interface*
+
+![Settings Panel View](preview/settings_preview.jpg)
+*Settings panel*
 
