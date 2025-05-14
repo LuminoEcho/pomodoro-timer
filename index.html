@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-A">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-curved/css/uicons-regular-curved.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pomodoro Timer</h1>
+            <div class="icons">
+                <i class="fi fi-rr-settings settings-icon"></i>
+                <i class="fi fi-rr-volume volume-icon" id="volumeIcon"></i>
+                <i class="fi fi-rr-volume-mute volume-mute-icon" id="volumeMuteIcon"></i>
+            </div>
+        </header>
+
+        <div class="modes">
+            <button class="mode-btn active" data-mode="pomodoro">Pomodoro</button>
+            <button class="mode-btn" data-mode="shortBreak">Short Break</button>
+            <button class="mode-btn" data-mode="longBreak">Long Break</button>
+        </div>
+
+        <div class="timer">
+            <div class="time-display">25:00</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="startPauseBtn"><i class="fi fi-rr-play"></i> Start</button>
+            <button class="control-btn" id="resetBtn" style="display: none;"><i class="fi fi-rr-rotate-left"></i> Reset</button>
+        </div>
+
+        <div class="shortcuts">
+            Space: Start/Pause • R: Reset
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-content">
+                    <h2>Settings</h2>
+                    <p>Customize your Pomodoro experience</p>
+                </div>
+                <span class="close-modal-btn"><i class="fi fi-rr-cross-small"></i></span>
+            </div>
+
+            <div class="settings-section">
+                <h3>TIME (MINUTES)</h3>
+                <div class="setting time-setting">
+                    <div class="setting-info">
+                        <label for="pomodoroTime">Pomodoro</label>
+                        <span class="time-value">25 min</span>
+                    </div>
+                    <input type="range" id="pomodoroTime" min="5" max="60" value="25">
+                </div>
+                <div class="setting time-setting">
+                    <div class="setting-info">
+                        <label for="shortBreakTime">Short Break</label>
+                        <span class="time-value">5 min</span>
+                    </div>
+                    <input type="range" id="shortBreakTime" min="1" max="15" value="5">
+                </div>
+                <div class="setting time-setting">
+                    <div class="setting-info">
+                        <label for="longBreakTime">Long Break</label>
+                        <span class="time-value">15 min</span>
+                    </div>
+                    <input type="range" id="longBreakTime" min="10" max="30" value="15">
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>BEHAVIOR</h3>
+                <div class="setting toggle-setting">
+                    <div class="toggle-text-content">
+                        <label for="autoStartBreaks">Auto-start breaks</label>
+                        <span>Automatically start break timer when a Pomodoro ends</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="autoStartBreaks" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting toggle-setting">
+                    <div class="toggle-text-content">
+                        <label for="autoStartPomodoros">Auto-start Pomodoros</label>
+                        <span>Automatically start work timer when a break ends</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="autoStartPomodoros" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting toggle-setting">
+                    <div class="toggle-text-content">
+                        <label for="soundNotifications">Sound notifications</label>
+                        <span>Play sound when timer completes</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="soundNotifications" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="saveSettingsBtn">Save Settings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script></body>
+</html> 
